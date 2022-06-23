@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="">
+	</head>
+	<body>
+		<h2>HOTEL XYZ CUSTOMER RECORDS</h2>
+		<form method="post">
+			{% csrf_token %}
+			<div>
+				<label for="rnumber">Room Number</label>
+				<input type="number" id="rnumber" name="rnumber" required>
+			<div><br>
+			<div>
+				<label for="amount"> Amount Paid</label>
+				<input type="number" id="amount" name="amount" required>
+			<div><br>
+			<div>
+				<label for="fname">Occupant First Name</label>
+				<input type="text" id="fname" name="fname" required>
+			<div><br>
+            <div>
+                <label for="lname">Occupant Last Name</label>
+				<input type="text" id="lname" name="lname" required>
+            <div><br>
+			<div>
+				<label for="email">Occupant Email</label>
+				<input type="email" id="email" name="email" required>
+			<div><br>
+			<div>
+				<label for="occupation"> Occupant Occupation</label>
+				<input type="text" id="occupation" name="occupation" required>
+			<div><br>
+			<div>
+				<label for="nights"> Number Of Nights</label>
+				<input type="number" id="nights" name="nights" required> 
+			<div><br>
+            <div>
+                <label for="sdate"> Start Date</label>
+                <input type="date" id="sdate" name="sdate" required>
+            <div>
+                <label for="edate"> End Date</label>
+                <input type="date" id="edate" name="edate" required>
+            <div><br>
+			<div>
+				<button type="submit">Register</button>
+			<div>
+		<script src="" async defer></script>
+	</body>
+</html>
